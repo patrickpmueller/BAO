@@ -22,7 +22,7 @@ def c(s0, s1, ci):
 
 
 def rotate(shift, r):
-    for ri in range(abs(r)):
+    for ri in range(abs(r) % len(shift)):
         if r > 0:
             shift = shift[1:] + shift[0]
         else:
